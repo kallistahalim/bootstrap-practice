@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 2
+  </title>
+</head>
+<body>
+    <h1>Question Game</h1>
+    <h2>hitting t (for true) or f (for false)</h2>
+    <div class="Game">
+    <script type="text/javascript">
+    var questionGame = [
+        {q:"unicorn is real", a: false},
+        {q:"sky is blue", a: true},
+        {q:"burger king is junk food", a: true},
+        {q:"ice cream is cold", a: true},
+        {q:"candy is sweet", a:true},
+        {q:"medicine tastes good", a:false},
+        {q:"weed is bad", a:false},
+        {q:"Wi-Fi is important", a:true},
+        {q:"Big Bang Theory is awesome", a:true},
+        {q:"this bootcamp is hard", a:true}
+    ]
+
+var randomQuestion=[Math.floor(Math.random() * questionGame.length)];
+
+var question = questionGame[randomQuestion];   
+
+document.onKeyUp = function(event) {
+
+var userGuess = event.key;
+
+}
+
+alert(question.q);
+
+
+
+if (event.key === "T" || event.key === "F") {
+    alert(question.q);
+}
+else {
+   alert("only press T or F")
+}
+
+
+
+
+
+
+
+    </script>
+</div>
+</body>
+</html>
+
+
